@@ -1,0 +1,72 @@
+.content{
+    width: 640px;
+    height: 640px;
+    margin: 100px auto;
+
+    /* 两个按钮与蛇的父级是叠在一起的，所以需要相对定位 */   
+    position: relative;
+}
+.btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* 遮罩层颜色 */
+    background-color: rgba(0,0,0,0.3);
+    /* 使遮罩层浮在最上层 */
+    z-index: 2;
+}
+.btn button{
+    background: none;
+    border: none;
+
+    background-size: 100% 100%;
+    cursor: pointer;
+    outline: none;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.startBtn button{
+    width: 386px;
+    height: 118px;
+    background: url(../images/startGame.png);
+    margin-left: -193px;
+    margin-top: -60px;
+}
+.pauseBtn {
+    display: none;
+}
+.pauseBtn button{
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/start.png);
+    margin-left: -35px;
+    margin-top: -35px;
+}
+
+/* 蛇的父级 */
+#snakeWrap{
+    width: 600px;
+    height: 600px;
+    background-color: #225675;
+    border: 20px solid #7dd9ff;
+    position: relative;
+}
+#snakeWrap div{
+    width: 20px;
+    height: 20px;
+}
+.snakeHead{
+    background-image: url(../images/snake.png);
+}
+.snakeBody{
+    background-color: rgb(34,177,76);
+    border-radius: 50%;
+}
+.food{
+    background-image: url(../images/food.png);
+    background-size: cover;  /* 使图片适配容器大小 */
+}
