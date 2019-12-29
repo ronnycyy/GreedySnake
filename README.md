@@ -1,2 +1,8 @@
-# GreedySnake
-practice native JS by writing greedy snak
+# 贪吃蛇Web版
+### 原生JS编写
+
+#### 用法：使用浏览器打开index.html即可
+
+#### 提示: 页面中点击蛇移动的区域可以暂停
+
+##### 项目有任何不足，欢迎加微信：ronnychan0820讨论
